@@ -22,7 +22,7 @@ class ZCU102MIGIODDR(depth : BigInt) extends Bundle {
   val c0_ddr4_cs_n          = Output(Bits(1.W))
   val c0_ddr4_odt           = Output(Bits(1.W))
 
-  val c0_ddr4_dq            = Analog(12.W)
+  val c0_ddr4_dq            = Analog(16.W)
   val c0_ddr4_dqs_c         = Analog(2.W)
   val c0_ddr4_dqs_t         = Analog(2.W)
   val c0_ddr4_dm_dbi_n      = Analog(2.W)

@@ -18,7 +18,7 @@ trait HasMemoryXilinxZCU102MIG { this: BaseSubsystem =>
 
 trait HasMemoryXilinxZCU102MIGBundle {
   val xilinxzcu102mig: XilinxZCU102MIGIO
-  def connectXilinxZCU102MIGToPads(pads: XilinxZCU102MIGPads) {
+  def connectXilinxZCU102MIGToPads(pads: XilinxZCU102MIGPads): Unit = {
     pads <> xilinxzcu102mig
   }
 }
