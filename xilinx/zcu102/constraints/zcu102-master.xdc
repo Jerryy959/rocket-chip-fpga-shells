@@ -15,17 +15,77 @@
 
 #set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets sys_clk_ibufds/O]
 
-set_property IOSTANDARD DIFF_SSTL12 [get_ports sys_diff_clock_clk_p]
+set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports sys_diff_clock_clk_p]
 
 set_property PACKAGE_PIN AL8 [get_ports sys_diff_clock_clk_p]
 set_property PACKAGE_PIN AL7 [get_ports sys_diff_clock_clk_n]
-set_property IOSTANDARD DIFF_SSTL12 [get_ports sys_diff_clock_clk_n]
+set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports sys_diff_clock_clk_n]
 
 set_property PACKAGE_PIN AM13 [get_ports reset]
 set_property IOSTANDARD LVCMOS33 [get_ports reset]
 
 create_clock -period 3.300 -name sys_diff_clk [get_ports sys_diff_clock_clk_p]
 
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[8]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[9]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[10]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[11]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[12]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[13]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[14]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[15]}]
+
+set_property IOSTANDARD DIFF_POD12_DCI     [get_ports {ddr_c0_ddr4_dqs_t[0]}]
+set_property IOSTANDARD DIFF_POD12_DCI     [get_ports {ddr_c0_ddr4_dqs_t[1]}]
+set_property IOSTANDARD DIFF_POD12_DCI     [get_ports {ddr_c0_ddr4_dqs_t[2]}]
+
+set_property IOSTANDARD DIFF_POD12_DCI  [get_ports {ddr_c0_ddr4_dqs_c[0]}]
+set_property IOSTANDARD DIFF_POD12_DCI  [get_ports {ddr_c0_ddr4_dqs_c[1]}]
+
+
+
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[0]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[1]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[2]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[3]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[4]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[5]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[6]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[7]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[8]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[9]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[10]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[11]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[12]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[13]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_ba[0]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_ba[1]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports ddr_c0_ddr4_bg]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[14]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[16]}]
+set_property IOSTANDARD SSTL12_DCI [get_ports {ddr_c0_ddr4_adr[15]}]
+
+set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports ddr_c0_ddr4_ck_t]
+set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports ddr_c0_ddr4_ck_c]
+
+set_property IOSTANDARD SSTL12_DCI [get_ports ddr_c0_ddr4_cke]
+set_property IOSTANDARD SSTL12_DCI [get_ports ddr_c0_ddr4_act_n]
+
+set_property IOSTANDARD LVCMOS18 [get_ports ddr_c0_ddr4_reset_n]
+
+set_property IOSTANDARD SSTL12_DCI [get_ports ddr_c0_ddr4_odt]
+set_property IOSTANDARD SSTL12_DCI [get_ports ddr_c0_ddr4_cs_n]
+
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[0]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[1]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[2]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[3]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[4]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[5]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[6]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dq[7]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dm_dbi_n[0]}]
+set_property IOSTANDARD POD12_DCI [get_ports {ddr_c0_ddr4_dm_dbi_n[1]}]
 
 
 set_input_jitter [get_clocks -of_objects [get_ports sys_diff_clock_clk_p]] 0.050
